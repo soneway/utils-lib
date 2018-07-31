@@ -4,7 +4,8 @@
   "description": "js utils",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rollup -c rollup.config.js"
+    "build": "npm i && rollup -c rollup.config.js",
+    "pub": "npm run build && npm publish"
   },
   "files": [
     "src",
