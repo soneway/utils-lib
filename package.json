@@ -1,0 +1,35 @@
+{
+  "name": "utils-lib",
+  "version": "0.0.1",
+  "description": "js utils",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soneway/utils-lib.git"
+  },
+  "keywords": [
+    "js",
+    "utils"
+  ],
+  "author": "soneway",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soneway/utils-lib/issues"
+  },
+  "homepage": "https://github.com/soneway/utils-lib#readme",
+  "devDependencies": {
+    "eslint": "^5.0.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-html": "^4.0.5",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
+    "eslint-plugin-react": "^7.10.0"
+  }
+}
