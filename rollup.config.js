@@ -3,7 +3,7 @@ import path from 'path';
 import fs from 'fs';
 
 // 获取entry函数
-function getEntries(entryDir = path.join(__dirname, './src/utils')) {
+function getEntries(entryDir = path.join(__dirname, './src')) {
   const files = fs.readdirSync(entryDir);
   return files.map((file) => path.join(entryDir, file))
     // 过滤出.js文件
