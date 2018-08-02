@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 /**
  * 根据path安全获取值
  * @param object 取值的对象

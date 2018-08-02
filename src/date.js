@@ -25,7 +25,7 @@ function getBeforeTime(opts = {}) {
     };
   }
   // 配置项
-  opts = { ...getBeforeTime.defaults, ...opts };
+  opts = Object.assign({}, getBeforeTime.defaults, opts);
   const {
     date, splitReg, units, type, rightNow, ago,
   } = opts;

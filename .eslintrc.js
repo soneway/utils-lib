@@ -53,5 +53,7 @@ module.exports = {
     'no-underscore-dangle': 1,
     // 禁止在使用new构造一个实例后不赋值
     'no-new': 1,
+    // 禁用特定的全局变量
+    'no-restricted-globals': 0,
   },
 };

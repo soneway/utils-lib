@@ -1,7 +1,5 @@
 // 查询字符转为对象
-function parse(str) {
-  str || (str = window.location.search.slice(1));
-
+function parse(str = location.search.slice(1)) {
   const rs = {};
   // 字符
   if (typeof str === 'string' && str) {
