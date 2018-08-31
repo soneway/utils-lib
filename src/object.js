@@ -31,7 +31,11 @@ function getValueByPath(object, path, defaultValue) {
   return val;
 }
 
-// 深复制
+/**
+ * 深复制对象
+ * @param object 被复制的对象
+ * @returns {*}
+ */
 function deepCopy(object) {
   try {
     return JSON.parse(JSON.stringify(object));
