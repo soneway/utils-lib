@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 /**
  * 根据path安全获取值
  * @param object 取值的对象
@@ -32,6 +31,17 @@ function getValueByPath(object, path, defaultValue) {
   return val;
 }
 
+// 深复制
+function deepCopy(object) {
+  try {
+    return JSON.parse(JSON.stringify(object));
+  }
+  catch (e) {
+    return object;
+  }
+}
+
 export {
   getValueByPath,
+  deepCopy,
 };
