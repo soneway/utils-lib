@@ -18,7 +18,7 @@ function getValueByPath(object, path, defaultValue) {
 
   // 遍历路径
   const val = paths.reduce((prev, item) => {
-    if (prev === undefined || prev === null) {
+    if (prev == null) {
       return prev;
     }
     return prev[item];
