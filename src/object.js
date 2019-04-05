@@ -5,7 +5,7 @@
  * @param defaultValue 默认值
  * @returns {*}
  */
-function getValueByPath(object, path, defaultValue) {
+function getValueByPath (object, path, defaultValue) {
   // 对像为null
   if (object === null) {
     if (defaultValue !== undefined) {
@@ -36,7 +36,7 @@ function getValueByPath(object, path, defaultValue) {
  * @param object 被复制的对象
  * @returns {*}
  */
-function deepCopy(object) {
+function deepCopy (object) {
   try {
     return JSON.parse(JSON.stringify(object));
   }

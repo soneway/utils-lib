@@ -1,5 +1,5 @@
 // 获取date字符函数
-function getDateStr(date) {
+function getDateStr (date) {
   if (!(date instanceof Date)) {
     throw new Error('必须为Date');
   }
@@ -9,7 +9,7 @@ function getDateStr(date) {
 }
 
 // 获取倒计时函数
-function getTimespan(ts) {
+function getTimespan (ts) {
   const now = new Date();
   const today = new Date(getDateStr(now));
   const tmpDate = new Date(+today + ts);
@@ -17,7 +17,7 @@ function getTimespan(ts) {
 }
 
 // 获取多久以前函数
-function getBeforeTime(opts = {}) {
+function getBeforeTime (opts = {}) {
   // 如参数为日期
   if (opts instanceof Date) {
     opts = {
@@ -86,7 +86,6 @@ getBeforeTime.defaults = {
   // 以前信息
   ago: '前',
 };
-
 
 // 日期相关处理对象
 export default {

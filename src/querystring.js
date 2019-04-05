@@ -1,5 +1,5 @@
 // 查询字符转为对象
-function parse(str = location.search.slice(1)) {
+function parse (str = location.search.slice(1)) {
   const rs = {};
   // 字符
   if (typeof str === 'string' && str) {
@@ -14,7 +14,7 @@ function parse(str = location.search.slice(1)) {
 }
 
 // 对象转为查询字符
-function stringify(obj) {
+function stringify (obj) {
   return Object.keys(obj).map((key) => `${key}=${encodeURIComponent(obj[key])}`).join('&');
 }
 
@@ -22,14 +22,13 @@ function stringify(obj) {
 const queryData = parse();
 
 // 获取项
-function getItem(key) {
+function getItem (key) {
   if (!key) {
     return;
   }
   const data = parse();
   return data[key];
 }
-
 
 // 查询字符处理类
 export default {

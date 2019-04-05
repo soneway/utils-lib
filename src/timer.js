@@ -3,7 +3,7 @@
  * @param fn 回调函数
  * @param time 延时
  */
-function throttle(fn, time = 300) {
+function throttle (fn, time = 300) {
   if (fn.pending) {
     return;
   }
@@ -21,7 +21,7 @@ function throttle(fn, time = 300) {
  * @param fn 回调函数
  * @param time 延时
  */
-function debounce(fn, time = 300) {
+function debounce (fn, time = 300) {
   clearTimeout(fn.tid);
   fn.tid = setTimeout(fn, time);
 }

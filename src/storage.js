@@ -6,7 +6,7 @@ const expirePrefix = '_expire_';
  * 清除
  * @param {string} key 键
  */
-function removeItem(key) {
+function removeItem (key) {
   localStorage.removeItem(key);
   localStorage.removeItem(expirePrefix + key);
 }
@@ -18,7 +18,7 @@ function removeItem(key) {
  * @param {Date|number} days 过期时间|过期天数
  * @param {number} hours 过期小时数
  */
-function setItem(key, val, days, hours) {
+function setItem (key, val, days, hours) {
   // 如设值为空
   if (val === undefined || val === null) {
     return;
@@ -54,9 +54,8 @@ function setItem(key, val, days, hours) {
  * @param {string} key 键
  * @returns {string} 值
  */
-function getItem(key) {
+function getItem (key) {
   const date = new Date();
-
 
   const expire = localStorage.getItem(expirePrefix + key);
 
@@ -69,7 +68,6 @@ function getItem(key) {
   removeItem(key);
   return null;
 }
-
 
 // storage操作对象
 export default {

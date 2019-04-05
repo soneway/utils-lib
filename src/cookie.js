@@ -7,7 +7,7 @@ const { toString } = {};
  * @param {Date|number} days 过期时间|过期天数
  * @param {number} hours 过期小时数
  */
-function setItem(key, val, days, hours) {
+function setItem (key, val, days, hours) {
   let str = `${key}=${encodeURIComponent(val)}`;
 
   let expire;
@@ -31,7 +31,7 @@ function setItem(key, val, days, hours) {
 }
 
 // 获取
-function getItem(key) {
+function getItem (key) {
   const { cookie } = document;
   const index = cookie.indexOf(`${key}=`);
 
@@ -46,7 +46,7 @@ function getItem(key) {
 }
 
 // 清除
-function removeItem(key) {
+function removeItem (key) {
   document.cookie = `${key}=_;expires=${new Date().toUTCString()}`;
 }
 
