@@ -1,5 +1,5 @@
 // 转json
-function parseJson (string) {
+function parseJSON (string) {
   if (!string) {
     return {};
   }
@@ -13,5 +13,5 @@ function parseJson (string) {
 }
 
 export {
-  parseJson,
+  parseJSON,
 };
