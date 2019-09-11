@@ -23,6 +23,6 @@ module.exports = {
     // 强制驼峰法命名
     'camelcase': 0,
     // 禁止在使用new构造一个实例后不赋值
-    'no-new': 1,
+    'no-new': 0,
   },
 };
