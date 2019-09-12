@@ -10,12 +10,23 @@ function getDateString (ts, format = 'YYYY-MM-DD') {
   if (!ts) return;
 
   let tsDate;
+
   // 日期对象
   if (ts instanceof Date) {
     tsDate = ts;
   }
-  // 时间戳, 日期字符
-  else {
+  // 字符(日期字符)
+  if (typeof ts === 'string') {
+    // 日期字符
+    tsDate = new Date(ts);
+
+    if (!isValidDate(tsDate)) {
+      // 时间戳字符
+      tsDate = new Date(+ts);
+    }
+  }
+  // 时间戳数字
+  if (typeof ts === 'number') {
     tsDate = new Date(ts);
   }
 

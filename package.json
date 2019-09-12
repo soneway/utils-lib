@@ -29,7 +29,7 @@
     "utils"
   ],
   "author": "soneway",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/soneway/utils-lib/issues"
   },
