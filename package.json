@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "description": "js utils",
   "scripts": {
-    "build": "rm -rf dist && rollup -c rollup.config.js --experimentalCodeSplitting",
+    "build": "rm -rf dist && rollup -c rollup.config.js",
     "pub": "npm run build && npm publish",
     "lint": "eslint src --ext js,vue --fix",
     "lint-staged": "lint-staged"
@@ -51,7 +51,7 @@
     "eslint-plugin-standard": "4.0.0",
     "lint-staged": "^8.1.7",
     "pre-commit": "1.2.2",
-    "rollup": "0.63.5",
+    "rollup": "1.21.3",
     "rollup-plugin-babel": "3.0.7"
   }
 }
