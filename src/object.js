@@ -45,7 +45,13 @@ function deepCopy (object) {
   }
 }
 
+// 判断类型
+function isType (value, type) {
+  return {}.toString.call(value) === `[object ${type}]`;
+}
+
 export {
   getValueByPath,
   deepCopy,
+  isType,
 };
