@@ -25,7 +25,15 @@ function findParentComponent (context, componentName) {
   return parent;
 }
 
+// 响应式设值
+function reactSet (target, data) {
+  Object.keys(data).forEach((key) => {
+    Vue.set(target, key, data[key]);
+  });
+}
+
 export {
   getReactValue,
   findParentComponent,
+  reactSet,
 };
