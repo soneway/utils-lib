@@ -15,6 +15,7 @@ function getDateString (ts, format = 'YYYY-MM-DD') {
   if (ts instanceof Date) {
     tsDate = ts;
   }
+
   // 字符(日期字符)
   if (typeof ts === 'string') {
     // 日期字符
@@ -25,13 +26,14 @@ function getDateString (ts, format = 'YYYY-MM-DD') {
       tsDate = new Date(+ts);
     }
   }
+
   // 时间戳数字
   if (typeof ts === 'number') {
     tsDate = new Date(ts);
   }
 
   // 日期不合法
-  if (!isValidDate(tsDate)) return;
+  if (!isValidDate(tsDate)) return ts;
 
   return fecha.format(tsDate, format);
 }
