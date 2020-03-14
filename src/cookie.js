@@ -1,7 +1,7 @@
 const { toString } = {};
 
 /**
- * 设置cookie函数
+ * 设置cookie
  * @param {string} key 键
  * @param {string} val 值
  * @param {Date|number} days 过期时间|过期天数
@@ -30,7 +30,11 @@ function setItem (key, val, days, hours) {
   document.cookie = str;
 }
 
-// 获取
+/**
+ * 获取cookie
+ * @param {string} key 键
+ * @returns {string} cookie值
+ */
 function getItem (key) {
   const { cookie } = document;
   const index = cookie.indexOf(`${key}=`);
@@ -45,7 +49,10 @@ function getItem (key) {
   }
 }
 
-// 清除
+/**
+ * 清除cookie
+ * @param {string} key 键
+ */
 function removeItem (key) {
   document.cookie = `${key}=_;expires=${new Date().toUTCString()}`;
 }

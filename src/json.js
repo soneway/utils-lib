@@ -1,4 +1,8 @@
-// 转json
+/**
+ * 转json
+ * @param {string} string
+ * @returns {object} json对象
+ */
 function parseJSON (string) {
   if (!string) {
     return {};

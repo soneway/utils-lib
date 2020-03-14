@@ -1,9 +1,9 @@
 /**
  * 根据path安全获取值
- * @param object 取值的对象
- * @param path 属性path
- * @param defaultValue 默认值
- * @returns {*}
+ * @param {object} object 取值的对象
+ * @param {string} path 属性path
+ * @param {*} defaultValue 默认值
+ * @returns {*} 获取的值
  */
 function getValueByPath (object, path, defaultValue) {
   // 对像为null
@@ -33,8 +33,8 @@ function getValueByPath (object, path, defaultValue) {
 
 /**
  * 深复制对象
- * @param object 被复制的对象
- * @returns {*}
+ * @param {object|array} object 被复制的对象
+ * @returns {*} 复制的对象
  */
 function deepCopy (object) {
   try {
@@ -45,7 +45,12 @@ function deepCopy (object) {
   }
 }
 
-// 判断类型
+/**
+ * 判断类型
+ * @param {*} value 要判断的对象
+ * @param {string} type 类型
+ * @returns {boolean}
+ */
 function isType (value, type) {
   return {}.toString.call(value) === `[object ${type}]`;
 }
