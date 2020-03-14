@@ -8,7 +8,7 @@ npm i utils-lib -S
 ```js
 import { swapArrayItems } from 'utils-lib/dist/array';
 ```
-- [API文档](https://soneway.github.io/utils-lib/out/)
+- [API文档](https://soneway.github.io/utils-lib/out/global.html)
 
 ## array.js
 数组工具函数
