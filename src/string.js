@@ -1,8 +1,8 @@
 // 替换模板字符串
-function replaceTemplate (template, context) {
-  if (!context) return template;
-  return template.replace(/{(.*?)}/g, (match, key) => {
-    const value = context[key.trim()];
+function replaceTemplate (template, data) {
+  if (!data) return template;
+  return template.replace(/{(\w+)}/g, (_, key) => {
+    const value = data[key];
     return value !== undefined ? value : '';
   });
 }
