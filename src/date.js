@@ -28,7 +28,7 @@ function getDateString (ts, format = 'YYYY-MM-DD') {
   // 字符(日期字符)
   if (typeof ts === 'string') {
     // 日期字符
-    tsDate = new Date(ts);
+    tsDate = new Date(ts.replace(/-/g, '/'));
 
     if (!isValidDate(tsDate)) {
       // 时间戳字符
