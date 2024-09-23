@@ -53,7 +53,7 @@
     "eslint-plugin-vue": "5.2.2",
     "lint-staged": "8.1.5",
     "pre-commit": "1.2.2",
-    "rollup": "1.13.1",
+    "rollup": "3.29.5",
     "rollup-plugin-babel": "3.0.7"
   }
 }
